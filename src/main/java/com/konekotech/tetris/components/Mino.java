@@ -1,6 +1,6 @@
-package com.konekotech.tetris.controllers;
+package com.konekotech.tetris.components;
 import javafx.scene.paint.Color;
-import com.konekotech.tetris.ui.Board;
+import com.konekotech.tetris.engine.Board;
 
 /**
  * テトリミノを扱うための抽象クラス

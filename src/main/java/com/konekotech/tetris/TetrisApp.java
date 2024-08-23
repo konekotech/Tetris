@@ -5,7 +5,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.konekotech.tetris.ui.View;
+import com.konekotech.tetris.engine.View;
 
 
 /**

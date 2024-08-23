@@ -1,4 +1,4 @@
-package com.konekotech.tetris.ui;
+package com.konekotech.tetris.engine;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -8,9 +8,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.konekotech.tetris.controllers.Block;
-import com.konekotech.tetris.controllers.Mino;
-import com.konekotech.tetris.controllers.TMino;
+import com.konekotech.tetris.components.Block;
+import com.konekotech.tetris.components.Mino;
+import com.konekotech.tetris.components.TMino;
 
 public class Board {
     //loggerを作成

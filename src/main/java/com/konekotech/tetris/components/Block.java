@@ -1,4 +1,4 @@
-package com.konekotech.tetris.controllers;
+package com.konekotech.tetris.components;
 
 public class Block {
     private int x;
