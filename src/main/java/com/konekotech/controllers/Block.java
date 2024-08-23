@@ -1,6 +1,4 @@
-package org.piano.uec.controllers;
-
-import org.piano.uec.ui.Board;
+package com.konekotech.controllers;
 
 public class Block {
     private int x;

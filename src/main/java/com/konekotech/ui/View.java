@@ -1,7 +1,6 @@
-package org.piano.uec.ui;
+package com.konekotech.ui;
 
 import javafx.scene.Group;
-import javafx.scene.Scene;
 
 
 public class View extends Group {

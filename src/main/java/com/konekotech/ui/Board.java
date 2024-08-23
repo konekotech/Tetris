@@ -1,4 +1,4 @@
-package org.piano.uec.ui;
+package com.konekotech.ui;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -8,9 +8,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.piano.uec.controllers.Block;
-import org.piano.uec.controllers.Mino;
-import org.piano.uec.controllers.TMino;
+import com.konekotech.controllers.Block;
+import com.konekotech.controllers.Mino;
+import com.konekotech.controllers.TMino;
 
 public class Board {
     //loggerを作成

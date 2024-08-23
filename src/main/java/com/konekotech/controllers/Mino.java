@@ -1,6 +1,6 @@
-package org.piano.uec.controllers;
+package com.konekotech.controllers;
 import javafx.scene.paint.Color;
-import org.piano.uec.ui.Board;
+import com.konekotech.ui.Board;
 
 /**
  * テトリミノを扱うための抽象クラス

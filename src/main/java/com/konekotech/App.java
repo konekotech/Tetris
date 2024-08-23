@@ -1,15 +1,16 @@
-package org.piano.uec;
+package com.konekotech;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.piano.uec.ui.View;
+import com.konekotech.ui.View;
 
 
 /**
+ * JavaFX App
+ *
  * 参考
  * https://qiita.com/h-hata/items/cf65e6cf5c68d7e65001
  */
@@ -25,7 +26,7 @@ public class App extends Application {
         View view = new View();
         Scene scene = new Scene(view, 600, 800);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("てすと");
+        primaryStage.setTitle("Tetris");
         primaryStage.show();
         scene.setOnKeyPressed(view.getBoard()::keyPressed);
     }
