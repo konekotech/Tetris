@@ -1,4 +1,4 @@
-package com.konekotech.ui;
+package com.konekotech.tetris.ui;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -8,9 +8,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.konekotech.controllers.Block;
-import com.konekotech.controllers.Mino;
-import com.konekotech.controllers.TMino;
+import com.konekotech.tetris.controllers.Block;
+import com.konekotech.tetris.controllers.Mino;
+import com.konekotech.tetris.controllers.TMino;
 
 public class Board {
     //loggerを作成
@@ -75,8 +75,8 @@ public class Board {
      */
     private void fill(Mino mino){
         Block[] blocks = mino.getBlocks();
-        for(int i = 0; i < blocks.length; i++){
-            board[blocks[i].getX()][blocks[i].getY()].setFill(mino.getColor());
+        for (Block block : blocks) {
+            board[block.getX()][block.getY()].setFill(mino.getColor());
         }
     }
 
@@ -97,38 +97,38 @@ public class Board {
      */
     public void keyPressed(KeyEvent event){
         switch (event.getCode()){
-            case A -> {
+            case LEFT -> {
                 logger.info("Go left.");
-                erase(this.mino);
+                this.erase(this.mino);
                 this.mino.goLeft();
-                fill(this.mino);
+                this.fill(this.mino);
             }
-            case D->{
+            case RIGHT ->{
                 logger.info("Go right.");
-                erase(this.mino);
+                this.erase(this.mino);
                 this.mino.goRight();
-                fill(this.mino);
+                this.fill(this.mino);
             }
-            case Q -> {
-                logger.info("Roll left.");
+            case A -> {
+                logger.info("Rotate left.");
                 erase(this.mino);
-                this.mino.rollLeft();
-                fill(this.mino);
+                this.mino.rotateLeft();
+                this.fill(this.mino);
             }
-            case E ->{
-                logger.info("Roll right.");
-                erase(this.mino);
-                this.mino.rollRight();
-                fill(this.mino);
+            case B ->{
+                logger.info("Rotate right.");
+                this.erase(this.mino);
+                this.mino.rotateRight();
+                this.fill(this.mino);
             }
-            case S ->{
+            case DOWN ->{
                 logger.info("Go down.");
-                erase(this.mino);
+                this.erase(this.mino);
                 this.mino.goDown();
-                fill(this.mino);
+                this.fill(this.mino);
             }
             default -> {
-                System.out.println("ほげ");
+                logger.info("Invalid key is pressed.");
             }
         }
     }

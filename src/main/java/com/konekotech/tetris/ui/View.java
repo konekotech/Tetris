@@ -1,4 +1,4 @@
-package com.konekotech.ui;
+package com.konekotech.tetris.ui;
 
 import javafx.scene.Group;
 

@@ -1,6 +1,6 @@
-package com.konekotech.controllers;
+package com.konekotech.tetris.controllers;
 import javafx.scene.paint.Color;
-import com.konekotech.ui.Board;
+import com.konekotech.tetris.ui.Board;
 
 /**
  * テトリミノを扱うための抽象クラス
@@ -70,8 +70,8 @@ public abstract class Mino {
             blocks[i].setX(blocks[i].getX() - 1);
         }
     }
-    public abstract void rollRight();
-    public abstract void rollLeft();
+    public abstract void rotateRight();
+    public abstract void rotateLeft();
 
     public boolean isStop(){
         return this.stop;

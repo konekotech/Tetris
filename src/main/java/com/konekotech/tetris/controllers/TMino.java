@@ -1,7 +1,7 @@
-package com.konekotech.controllers;
+package com.konekotech.tetris.controllers;
 
 import javafx.scene.paint.Color;
-import com.konekotech.ui.Board;
+import com.konekotech.tetris.ui.Board;
 
 public class TMino extends Mino {
 
@@ -15,12 +15,12 @@ public class TMino extends Mino {
 
 
     @Override
-    public void rollRight() {
+    public void rotateRight() {
 
     }
 
     @Override
-    public void rollLeft() {
+    public void rotateLeft() {
 
     }
 }
