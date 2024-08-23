@@ -28,5 +28,5 @@ dependencies {
 
 application {
     mainModule = 'Tetris'
-    mainClass.set('com.konekotech.tetris.App')
+    mainClass.set('com.konekotech.tetris.Main')
 }
